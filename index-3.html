@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AVENTRA | Heat Rejection untuk Kaca Proyek & Mobil Baru</title>
+<meta name="description" content="Aventra — solusi heat rejection premium untuk kaca proyek, gedung, rumah, dan mobil baru.">
+<style>
+:root{--gold:#b89555;--gold2:#d7bd82;--dark:#111;--soft:#f7f5f0;--line:#e6e0d4}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--dark);background:#fff;line-height:1.6}
+a{text-decoration:none;color:inherit}.nav{position:fixed;top:0;left:0;right:0;z-index:10;background:rgba(255,255,255,.95);border-bottom:1px solid #eee}
+.navin{max-width:1180px;margin:auto;padding:18px 24px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:25px;font-weight:800;letter-spacing:5px}.logo span{color:var(--gold)}
+.menu{display:flex;gap:28px;font-size:13px;font-weight:700;letter-spacing:.5px}.menu a:hover{color:var(--gold)}
+.hero{min-height:92vh;padding-top:78px;display:grid;grid-template-columns:1.02fr .98fr;background:var(--soft)}
+.heroText{padding:90px max(28px,calc((100vw - 1180px)/2)) 80px 7vw;display:flex;flex-direction:column;justify-content:center}
+.kicker{font-size:12px;letter-spacing:3px;color:var(--gold);font-weight:800;text-transform:uppercase;margin-bottom:18px}
+h1{font-size:clamp(42px,5.2vw,72px);line-height:1.02;margin:0 0 24px;font-weight:800;letter-spacing:-2px}
+h1 em{font-style:normal;color:var(--gold)}
+.lead{font-size:18px;max-width:570px;color:#555;margin:0 0 30px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}.btn{padding:14px 22px;border:1px solid var(--dark);font-weight:700;font-size:13px}.btn.primary{background:var(--dark);color:#fff}.btn:hover{transform:translateY(-1px)}
+.heroImg{min-height:620px;background:url('https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=1600&q=88') center/cover;position:relative}
+.heroImg:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(247,245,240,.1),rgba(0,0,0,.08))}
+.strip{background:#111;color:#fff}.stripin{max-width:1180px;margin:auto;padding:20px 24px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px;text-align:center}.strip b{display:block;color:var(--gold2);font-size:18px}.strip span{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#bbb}
+section{padding:90px 24px}.wrap{max-width:1180px;margin:auto}.eyebrow{font-size:11px;letter-spacing:3px;color:var(--gold);font-weight:800;text-transform:uppercase}.title{font-size:42px;line-height:1.1;margin:10px 0 16px;letter-spacing:-1px}.desc{color:#666;max-width:700px}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:40px}.card{min-height:470px;position:relative;overflow:hidden;background:#ddd}.cardImg{position:absolute;inset:0;background-size:cover;background-position:center;transition:.5s}.card:hover .cardImg{transform:scale(1.04)}.card:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.78),rgba(0,0,0,.05) 65%)}.cardContent{position:absolute;z-index:2;bottom:0;color:#fff;padding:30px}.cardContent small{color:var(--gold2);font-weight:800;letter-spacing:2px}.cardContent h3{font-size:30px;margin:8px 0}.cardContent p{margin:0;color:#ddd;max-width:460px}
+.project{background:#faf9f6}.projectGrid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}.projectImg{height:540px;background:url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1400&q=88') center/cover}
+.points{margin-top:28px;display:grid;gap:18px}.point{display:flex;gap:15px}.num{width:34px;height:34px;border:1px solid var(--gold);display:grid;place-items:center;color:var(--gold);font-weight:800;flex:none}.point b{display:block;margin-bottom:3px}.point span{color:#666;font-size:14px}
+.car{display:grid;grid-template-columns:1fr 1fr;gap:0;align-items:stretch}.carImg{min-height:560px;background:url('https://images.unsplash.com/photo-1553440569-bcc63803a83d?auto=format&fit=crop&w=1400&q=88') center/cover}.carText{background:#111;color:#fff;padding:70px}.carText .desc{color:#bbb}.carText h2{font-size:44px;line-height:1.08;margin:12px 0 18px}.goldline{width:55px;height:2px;background:var(--gold);margin:25px 0}
+.process{background:var(--soft)}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px}.step{background:#fff;padding:30px;border:1px solid var(--line)}.step strong{font-size:34px;color:var(--gold);display:block}.step h3{margin:10px 0 7px}.step p{margin:0;color:#666;font-size:14px}
+.cta{padding:75px 24px;background:linear-gradient(110deg,#111,#202020);color:#fff}.ctaIn{max-width:1000px;margin:auto;text-align:center}.cta h2{font-size:45px;margin:0 0 12px}.cta p{color:#bbb}.cta .btn{border-color:#fff;color:#fff;display:inline-block;margin-top:15px}.cta .btn.primary{background:#fff;color:#111}
+footer{padding:30px 24px;text-align:center;font-size:12px;color:#777;border-top:1px solid #eee}
+@media(max-width:800px){
+ .menu{display:none}.hero{grid-template-columns:1fr}.heroText{padding:70px 24px}.heroImg{min-height:380px}.stripin{grid-template-columns:1fr}.cards,.projectGrid,.car{grid-template-columns:1fr}.projectImg{height:360px}.carImg{min-height:360px}.carText{padding:45px 28px}.steps{grid-template-columns:1fr}.title{font-size:34px}.cta h2{font-size:35px}
+}
+</style>
+</head>
+<body>
+<nav class="nav"><div class="navin">
+  <a class="logo" href="#">AVEN<span>TRA</span></a>
+  <div class="menu"><a href="#project">PROYEK KACA</a><a href="#car">MOBIL BARU</a><a href="#process">SOLUSI</a><a href="#contact">KONTAK</a></div>
+</div></nav>
+
+<header class="hero">
+  <div class="heroText">
+    <div class="kicker">Advanced Heat Rejection</div>
+    <h1>Solusi <em>kaca premium</em><br>untuk proyek & mobil baru.</h1>
+    <p class="lead">Aventra menghadirkan teknologi heat rejection untuk membantu mengurangi panas yang masuk melalui kaca, dengan tampilan yang tetap premium dan bersih.</p>
+    <div class="btns"><a class="btn primary" href="#project">LIHAT SOLUSI</a><a class="btn" href="#contact">KONSULTASI PROYEK</a></div>
+  </div>
+  <div class="heroImg"></div>
+</header>
+
+<div class="strip"><div class="stripin">
+  <div><b>PROJECT GLASS</b><span>Gedung • Rumah • Commercial</span></div>
+  <div><b>NEW CAR</b><span>Mobil Baru • Premium • Dealer</span></div>
+  <div><b>HEAT REJECTION</b><span>Fokus pada kenyamanan kaca</span></div>
+</div></div>
+
+<section id="project" class="project"><div class="wrap">
+  <div class="projectGrid">
+    <div class="projectImg"></div>
+    <div>
+      <div class="eyebrow">01 — Project Glass</div>
+      <h2 class="title">Untuk proyek kaca yang ingin tampil premium.</h2>
+      <p class="desc">Cocok untuk kebutuhan kaca pada rumah, kantor, gedung, showroom, facade dan proyek commercial. Fokus Aventra adalah membantu meningkatkan kenyamanan ruang melalui solusi heat rejection pada kaca.</p>
+      <div class="points">
+        <div class="point"><div class="num">01</div><div><b>Fokus pada kaca</b><span>Solusi dirancang untuk diaplikasikan pada berbagai kebutuhan kaca.</span></div></div>
+        <div class="point"><div class="num">02</div><div><b>Tampilan tetap elegan</b><span>Menjaga kesan bersih dan modern pada area kaca.</span></div></div>
+        <div class="point"><div class="num">03</div><div><b>Untuk proyek baru</b><span>Dapat dipertimbangkan sejak tahap desain hingga pekerjaan kaca.</span></div></div>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<section id="car"><div class="wrap">
+  <div class="eyebrow">02 — New Car</div>
+  <h2 class="title">Upgrade kaca mobil baru dengan solusi heat rejection.</h2>
+  <p class="desc">Untuk pemilik mobil baru yang mengutamakan kenyamanan kabin, tampilan premium dan perlindungan dari panas matahari.</p>
+  <div class="car" style="margin-top:38px">
+    <div class="carImg"></div>
+    <div class="carText">
+      <div class="eyebrow">Premium Automotive Glass</div>
+      <h2>Lebih nyaman.<br>Lebih premium.</h2>
+      <div class="goldline"></div>
+      <p class="desc">Aventra dapat menjadi pilihan untuk mobil baru, kendaraan premium, showroom dan kebutuhan automotive lainnya.</p>
+      <a class="btn primary" style="margin-top:22px" href="#contact">TANYAKAN PRODUK</a>
+    </div>
+  </div>
+</div></section>
+
+<section id="process" class="process"><div class="wrap">
+  <div class="eyebrow">03 — Solusi</div>
+  <h2 class="title">Cara memahami Aventra.</h2>
+  <p class="desc">Sederhana: kaca menerima panas matahari, Aventra membantu mengurangi panas yang diteruskan melalui kaca sehingga ruang atau kabin terasa lebih nyaman.</p>
+  <div class="steps">
+    <div class="step"><strong>01</strong><h3>Panas matahari</h3><p>Energi matahari mengenai permukaan kaca.</p></div>
+    <div class="step"><strong>02</strong><h3>Heat rejection</h3><p>Aventra membantu mengurangi panas yang masuk melalui kaca.</p></div>
+    <div class="step"><strong>03</strong><h3>Lebih nyaman</h3><p>Hasil akhirnya adalah pengalaman ruang atau kabin yang lebih nyaman.</p></div>
+  </div>
+</div></section>
+
+<section id="contact" class="cta"><div class="ctaIn">
+  <div class="eyebrow">Aventra</div>
+  <h2>Punya proyek kaca atau mobil baru?</h2>
+  <p>Konsultasikan kebutuhan Anda untuk mendapatkan solusi Aventra yang sesuai.</p>
+  <a class="btn primary" href="mailto:aventraglass@gmail.com">aventraglass@gmail.com</a>
+</div></section>
+
+<footer>© 2026 AVENTRA — Advanced Heat Rejection Technology</footer>
+</body>
+</html>
